@@ -1,0 +1,6 @@
+[book]
+authors = ["Federico Ponzi"]
+language = "en"
+multilingual = false
+src = "src"
+title = "TLA+ Wiki"
