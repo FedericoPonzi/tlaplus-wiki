@@ -33,6 +33,7 @@
     - [Community Modules](./using/community-modules.md)
     - [Debugger](./using/debugger.md)
     - [Generating stage graphs](./using/generating-state-graphs.md)
+    - [TLA+ Web Explorer](./using/tla-web-explorer.md)
     - [CI for your specifications](./using/ci-for-specs.md)
     - [Known limitations](./using/limitations.md)
 - [TLA+ Community: what to do when you're stuck](community.md)
