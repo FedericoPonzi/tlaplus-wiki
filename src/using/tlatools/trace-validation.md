@@ -7,6 +7,9 @@ Trace Validation (TV) essentially adopts this approach by mapping recorded imple
 
 In CCF, this feature is still on our roadmap. However, manually translating TLA+ counterexamples (violations of the spec's correctness properties) into inputs for the implementation was straightforward.
 
+## Why Trace Validation is Useful
+You can use it to check that the implementation is in sync with your spec, or even go as far as generating a complete spec from the code. See discussion [here](https://github.com/eatonphil/raft-rs/issues/1#issuecomment-1854576123).
+
 # Depth-First Search
 Depth-First Search for trace validation.
 
@@ -16,3 +19,6 @@ JVM_OPTIONS=-Dtlc2.tool.queue.IStateQueue=StateDeque
 ```
 
 StateDequeue was added in Jan 2024.
+
+## Resources:
+* [Verifying Software Traces Against a Formal Specification with TLA+ and TLC](https://pron.github.io/files/Trace.pdf)
