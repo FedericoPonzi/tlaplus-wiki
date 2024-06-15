@@ -31,7 +31,7 @@
     - [Vscode extension](./using/vscode.md)
     - [Toolbox](./using/toolbox.md)
     - [TLA2Tools - CLI](./using/tla2tools-cli.md)
-        - [Depth-First Search](./using/tla2tools-cli-dfs.md)
+        - [Trace Validation](./using/tlatools/trace-validation.md)
     - [Standard Library](./using/standard-lib.md)
     - [Community Modules](./using/community-modules.md)
     - [Debugger](./using/debugger.md)
