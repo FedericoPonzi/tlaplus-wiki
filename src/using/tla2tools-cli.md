@@ -23,6 +23,22 @@ java -jar ./dist/tla2tools.jar <MySpec.tla>
 ```
 the cli will automatically use the config file called MySpec.cfg in that same directory, if present.
 
+### JVM options
+```
+See https://docs.oracle.com/en/java/javase/20/gctuning/available-collectors.html#GUID-F215A508-9E58-40B4-90A5-74E29BF3BD3C
+
+> If (a) peak application performance is the first priority and (b) there are no pause-time requirements or pauses of one second or longer are acceptable,
+> then let the VM select the collector or select the parallel collector with -XX:+UseParallelGC.
+
+Simulation, nor Model Checking seem to work well with G1GC, but Trace Validation does not for some reason, and is much slower unless -XX:+UseParallelGC is used.
+
+In all cases, pauses don't matter, only throughput does.
+```
+java -XX:+UseParallelGC
+```
+
+
+
 ## Parameters
 You can always access the latest information by using
 ```
