@@ -1,6 +1,3 @@
-[preprocessor.last-changed]
-command = "mdbook-last-changed"
-renderer = ["html"]
 [book]
 authors = ["Federico Ponzi"]
 language = "en"
@@ -8,7 +5,14 @@ multilingual = false
 src = "src"
 title = "TLA+ Wiki"
 
+[preprocessor.last-changed]
+command = "mdbook-last-changed"
+renderer = ["html"]
+
+[preprocessor.toc]
+command = "mdbook-toc"
+renderer = ["html"]
+
 [output.html]
-# Optional: Your repository URL used in the link.
 git-repository-url = "https://github.com/FedericoPonzi/tlaplus-wiki"
 additional-css = ["last-changed.css"]
