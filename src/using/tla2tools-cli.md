@@ -5,6 +5,9 @@ TLA tools contain all the tools related to tla+ and tlc:
 
 To run them, you will need Java runtime environment version 11.
 
+### Table Of Contents:
+<!-- toc -->
+
 ## Getting the latest stable release
 You can always download the latest stable release from the release page on github: https://github.com/tlaplus/tlaplus/releases/
 
