@@ -10,4 +10,5 @@ You will need the following components:
 ## to show last change date at the bottom of the pages.
 cargo install mdbook-last-changed
 cargo install mdbook-toc
+cargo install mdbook-katex
 ```
