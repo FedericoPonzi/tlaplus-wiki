@@ -1,9 +1,7 @@
-# TLA2Tools - CLI
-TLA tools contain all the tools related to tla+ and tlc:
- * model checker
- * SANY
+# TLC Model Checker
+TLC is an explicit state model checker originally written by Yu et al. [1999] to verify TLA+ specifications. TLC can check a subset of TLA+ that is commonly needed to describe real-world systems, most notably finite systems.
 
-To run them, you will need Java runtime environment version 11.
+To run it, you will need Java runtime environment version 11.
 
 ### Table Of Contents:
 <!-- toc -->
