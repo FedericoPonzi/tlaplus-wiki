@@ -32,6 +32,7 @@
     - [Vscode extension](./using/vscode.md)
     - [Toolbox](./using/toolbox.md)
     - [TLC Model Checker](./using/tlc.md)
+        - [How TLC works](./using/tlc/how-tlc-works.md)
         - [Trace Validation](./using/tlc/trace-validation.md)
     - [Standard Library](./using/standard-lib.md)
     - [Community Modules](./using/community-modules.md)

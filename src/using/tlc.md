@@ -38,8 +38,7 @@ java -XX:+UseParallelGC
 ```
 
 
-
-## Parameters
+## CLI Parameters
 You can always access the latest information by using
 ```
 java -jar ./dist/tla2tools.jar -help
