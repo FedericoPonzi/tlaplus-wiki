@@ -40,47 +40,51 @@ TLC supports the use of TLC module overwrites in TLA+ and PlusCal specifications
 
 Additionally, TLC module overwrites make the Java library available to TLA+ users.
 
-```
-Algorithm 1 : TLC's algorithm to check safety properties
-1 --algorithm ModelChecker {
-2 variables
-3 S ∈ SetOfAllPermutationsOfInitials(StateGraph),
-4 C = {}, state = null , successors = {},
-5 i = 1, counterexample = 〈〉, T = 〈〉 ; {
-6 init : while (i ≤ Len(S )){
-7 state := Head (S ) ;
-8 C := C ∪ {state} ;
-9 i := i + 1 ;
-10 if (state ∈ ViolationStates){
-11 counterexample := 〈state〉 ; goto trc ;
-12 } ;
-13 } ;
-14 scsr : while (Len(S ) 6 = 0){
-15 state := Head (S ) ; S := Tail (S ) ;
-16 successors := SuccessorsOf (state, StateGraph, C ) ;
-17 if (successors = {state}){
-18 counterexample := 〈null 〉 ; goto trc ;
-19 } ;
-20 each : while (successors 6 = {}){
-21 with (succ ∈ successors){
-22 successors := successors \ {succ} ;
-23 C := C ∪ {succ} ; S := S ◦ 〈succ〉 ;
-24 T := T ◦ 〈〈state, succ〉〉 ;
-25 if (succ ∈ ViolationStates){
-26 counterexample := 〈succ〉 ; goto trc ;
-27 } ;
-28 } ;
-29 } ;
-30 } ;
-31 goto Done ;
-32 trc : while (true){
-33 if (Head (counterexample) /∈ StateGraph.initials){
-34 counterexample :=
-35 〈Predecessor (T , Head (counterexample))〉 ◦ counterexample ;
-36 }else {
-37 goto Done ;
-38 } ;
-39 } ;
-40 }
-41 }
-```
+\[
+\begin{array}{l}
+        \textbf{algorithm} \; \text{ModelChecker} \{ \\
+        \quad \textbf{variables} \\
+        \quad S := \text{SetOfAllPermutationsOfInitials}(StateGraph); \\
+        \quad C := \{\}, \; state := null, \; successors := \{\}; \\
+        \quad i := 1, \; counterexample := \langle \rangle, \; T := \langle \rangle; \\
+        \\
+        \quad \textbf{init: while} \; (i \leq \text{Len}(S)) \{ \\
+        \quad \quad state := \text{Head}(S); \\
+        \quad \quad C := C \cup \{state\}; \\
+        \quad \quad i := i + 1; \\
+        \quad \quad \textbf{if} \; (state \in \text{ViolationStates}) \{ \\
+        \quad \quad \quad counterexample := \langle state \rangle; \; \textbf{goto} \; trc; \\
+        \quad \quad \} \textbf{end if}; \\
+        \quad \} \textbf{end while}; \\
+        \\
+        \quad \textbf{scsr: while} \; (\text{Len}(S) \neq 0) \{ \\
+        \quad \quad state := \text{Head}(S); \; S := \text{Tail}(S); \\
+        \quad \quad successors := \text{SuccessorsOf}(state, \; StateGraph, \; C); \\
+        \quad \quad \textbf{if} \; (successors = \{state\}) \{ \\
+        \quad \quad \quad counterexample := \langle null \rangle; \; \textbf{goto} \; trc; \\
+        \quad \quad \} \textbf{end if}; \\
+        \quad \quad \textbf{each: while} \; (successors \neq \{\}) \{ \\
+        \quad \quad \quad \textbf{with} \; (succ \in successors) \{ \\
+        \quad \quad \quad \quad successors := successors \setminus \{succ\}; \\
+        \quad \quad \quad \quad C := C \cup \{succ\}; \; S := S \circ \{succ\}; \\
+        \quad \quad \quad \quad T := T \circ \langle (state, succ) \rangle; \\
+        \quad \quad \quad \quad \textbf{if} \; (succ \in \text{ViolationStates}) \{ \\
+        \quad \quad \quad \quad \quad counterexample := \langle succ \rangle; \; \textbf{goto} \; trc; \\
+        \quad \quad \quad \quad \} \textbf{end if}; \\
+        \quad \quad \quad \} \textbf{end while}; \\
+        \quad \quad \} \textbf{end while}; \\
+        \\
+        \quad \textbf{goto} \; Done; \\
+        \\
+        \quad \textbf{trc: while} \; (\text{TRUE}) \{ \\
+        \quad \quad \textbf{if} \; (\text{Head}(counterexample) \notin \text{StateGraph.initials}) \{ \\
+        \quad \quad \quad counterexample := \langle \text{Predecessor}(T, \text{Head}(counterexample)) \circ counterexample \rangle; \\
+        \quad \quad \} \textbf{else} \{ \\
+        \quad \quad \quad \textbf{goto} \; Done; \\
+        \quad \quad \} \textbf{end if}; \\
+        \quad \} \textbf{end while}; \\
+        \\
+        \quad \textbf{Done:}; \\
+        \}
+        \end{array}
+\]
