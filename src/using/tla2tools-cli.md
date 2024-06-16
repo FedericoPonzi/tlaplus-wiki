@@ -44,7 +44,11 @@ You can always access the latest information by using
 ```
 java -jar ./dist/tla2tools.jar -help
 ```
-These are all the options supported at the time of writing from master:
+Not all options are exposed through it though. These are the options that are supported but missing from the -help:
+
+* `-lncheck`: Check liveness properties at different times of model checking. Supported values are "default", "final", "seqfinal". "default" will check liveness at every step, while final will search it only at the end of the exploration. "seqfinal" is anlias for "final".
+
+These are all the options outputted from the cli at the time of writing from master:
 ```
     -aril num
             adjust the seed for random simulation; defaults to 0
