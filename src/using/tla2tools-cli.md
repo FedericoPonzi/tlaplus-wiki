@@ -24,7 +24,6 @@ java -jar ./dist/tla2tools.jar <MySpec.tla>
 the cli will automatically use the config file called MySpec.cfg in that same directory, if present.
 
 ### JVM options
-```
 See https://docs.oracle.com/en/java/javase/20/gctuning/available-collectors.html#GUID-F215A508-9E58-40B4-90A5-74E29BF3BD3C
 
 > If (a) peak application performance is the first priority and (b) there are no pause-time requirements or pauses of one second or longer are acceptable,
