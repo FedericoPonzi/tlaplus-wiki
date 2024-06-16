@@ -3,11 +3,12 @@
 - [TLA+ Wiki intro](./intro.md)
     - [Contributing](./contributing.md)
 ----
-- [TLA+ Codebase](./codebase/intro.md)
+- [TLA+ Tools Codebase](./codebase/intro.md)
     - [Contributing](./codebase/contributing.md)
     - [Setting up the development environment](./codebase/devenv.md)
     - [CI/CD overview](./codebase/ci-cd.md)
     - [Codebase Architecture Walkthrough](./codebase/architecture.md)
+    - [Architecture of the TLA+ Toolbox (IDE)](./codebase/architecture-toolbox.md)
     - [Codebase Idiosyncrasies](./codebase/idiosyncrasies.md)
     - [Wishlist](./codebase/wishlist.md)
     - [Benchmarks]()
