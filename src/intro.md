@@ -12,7 +12,7 @@ The takeaway also sums up the mission of this wiki well:
 > **Streamlining Documentation**: There's a clear demand for better-organised documentation and centralised resources with a more modern interface to cater to users' preferences for accessible and comprehensive guidance.
 
 
-This is a community-backed effort, so please if you find errors or suggestions/ideas/feedback, please create a PR or an issue.
+This is a community-backed effort, so if you find errors or suggestions/ideas/feedback, please create a PR or an issue.
 
 If you want to contribute, please check [Contributing](contributing.md) page with detailed step by step. The source of this website is hosted [here](https://github.com/FedericoPonzi/tlaplus-wiki/).
 
