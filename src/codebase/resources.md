@@ -1,0 +1,2 @@
+# Resources
+* Temporal Verification of Reactive Systems: Safety by Zohar Manna, Amir Pnueli. Section 5.5 "Particle Tableaux" is useful to understand the use of Tableaux for liveness verification in tlc codebase. 
