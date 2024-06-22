@@ -88,3 +88,10 @@ Additionally, TLC module overwrites make the Java library available to TLA+ user
         \}
         \end{array}
 \]
+
+---
+
+## What's the difference between the behavior graph and state exploration graph?
+
+The behavior graph is the cross product of the state graph and the tableau that represents the liveness property.
+

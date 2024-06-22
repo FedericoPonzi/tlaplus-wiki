@@ -14,6 +14,7 @@
     - [Pluscal](./learning/pluscal.md)
         - []()
     - [TLA+ Vs xxx](./learning/tla-comparisons.md)
+    - [Summary](./learning/tla-summary.md)
     - [Config files](./learning/config-file.md)
     - [FAQ](./learning/faq.md)
 - [Learning TLAP]()

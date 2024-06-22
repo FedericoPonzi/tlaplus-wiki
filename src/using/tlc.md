@@ -45,7 +45,7 @@ java -jar ./dist/tla2tools.jar -help
 ```
 Not all options are exposed through it though. These are the options that are supported but missing from the -help:
 
-* `-lncheck`: Check liveness properties at different times of model checking. Supported values are "default", "final", "seqfinal". "default" will check liveness at every step, while final will search it only at the end of the exploration. "seqfinal" is anlias for "final".
+* `-lncheck`: Check liveness properties at different times of model checking. Supported values are "default", "final", "seqfinal". "default" will check liveness at every step, while final will search it only at the end of the exploration. "seqfinal" is anlias for "final". -lncheck final option postpones the search of Strongly Connected Components in the behavior graph until after the safety check has been completed
 
 These are all the options outputted from the cli at the time of writing from master:
 ```
