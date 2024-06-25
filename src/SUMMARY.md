@@ -17,6 +17,7 @@
     - [Summary](./learning/tla-summary.md)
     - [Config files](./learning/config-file.md)
     - [FAQ](./learning/faq.md)
+    - [Distributed mode](./learning/distributed.md)
 - [Learning TLAP]()
 - [Tools](./using/intro.md)
     - [Vscode extension](./using/vscode.md)
