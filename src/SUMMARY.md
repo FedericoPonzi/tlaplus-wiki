@@ -38,6 +38,7 @@
     - [Setting up the development environment](./codebase/devenv.md)
     - [Debugging and rootcausing issues](./codebase/debugging.md)
     - [CI/CD overview](./codebase/ci-cd.md)
+    - [Pluscal](./codebase/pluscal.md)
     - [Codebase Architecture Walkthrough](./codebase/architecture.md)
     - [Architecture of the TLA+ Toolbox (IDE)](./codebase/architecture-toolbox.md)
     - [Codebase Idiosyncrasies](./codebase/idiosyncrasies.md)
