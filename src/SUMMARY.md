@@ -3,7 +3,7 @@
 - [TLA+ Wiki intro](./intro.md)
     - [Contributing](./contributing.md)
 ----
-- [Learning TLA+: Introduction](./learning/intro.md)
+- [Learning TLA+](./learning/intro.md)
     - [Lamport's video tutorial]()
     - [Hyperbook]()
     - [Example repo]()
@@ -18,7 +18,7 @@
     - [Config files](./learning/config-file.md)
     - [FAQ](./learning/faq.md)
     - [Distributed mode](./learning/distributed.md)
-- [Learning TLAP]()
+    - [Learning TLAP]()
 - [Tools](./using/intro.md)
     - [Vscode extension](./using/vscode.md)
     - [Toolbox](./using/toolbox.md)
