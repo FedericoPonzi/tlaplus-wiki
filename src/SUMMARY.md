@@ -33,6 +33,7 @@
     - [Generating Animations of State Changes](./using/generating-animation.md)
     - [(Github) CI for your specifications](./using/ci-for-specs.md)
     - [Generating GO from pluscal specs](./using/pgo-generating-go-from-pluscal.md)
+    - [AI Linter](./using/ai-linter.md)
     - [Known limitations](./using/limitations.md)
 - [TLA+ Tools Codebase](./codebase/intro.md)
     - [Contributing](./codebase/contributing.md)
