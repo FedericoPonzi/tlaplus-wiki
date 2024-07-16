@@ -25,6 +25,7 @@
     - [TLC Model Checker](./using/tlc.md)
         - [How TLC works](./using/tlc/how-tlc-works.md)
         - [Trace Validation](./using/tlc/trace-validation.md)
+        - [Liveness](./using/tlc/liveness.md)
     - [Standard Library](./using/standard-lib.md)
     - [Community Modules](./using/community-modules.md)
     - [Debugger](./using/debugger.md)
