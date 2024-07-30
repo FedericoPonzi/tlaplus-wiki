@@ -182,6 +182,9 @@ These are all the options outputted from the cli at the time of writing from mas
             number of available cores.
 ```
 
+## Undocumented flags
+Some flags can be set passing java parameters to tlc, they are mostly undocumented (for now) and can be found by searching for "Boolean.getBoolean" in the codebase.
+
 
 ## Good to know:
 When using the  '-generateSpecTE' you can version the generated specification by doing:

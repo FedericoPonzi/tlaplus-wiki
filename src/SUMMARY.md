@@ -29,6 +29,7 @@
     - [Standard Library](./using/standard-lib.md)
     - [Community Modules](./using/community-modules.md)
     - [Debugger](./using/debugger.md)
+    - [Spec actions coverage](./using/coverage.md)
     - [Generating state graphs](./using/generating-state-graphs.md)
     - [Generating sequence diagrams](./using/generating-sequence-diagrams.md)
     - [TLA+ Web Explorer](./using/tla-web-explorer.md)
