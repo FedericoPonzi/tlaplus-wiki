@@ -4,7 +4,7 @@ never taken and which might indicate an error in the specification.
 
 ## How to read coverage?
 
-
+```
 // Determine if the mapping from the action's name/identifier/declaration to the
 // action's definition is 1:1 or 1:N.
 //
@@ -26,11 +26,13 @@ never taken and which might indicate an error in the specification.
 		} else {
 			// 1:N
 			return String.format("<%s %s (%s %s %s %s)>",
-
+```
 At high level, it's defined as:
+```
 MP.printMessage(EC.TLC_COVERAGE_VALUE_COST,
         new String[] { indentBegin(level, TLCGlobals.coverageIndent, getLocation().toString()),
                 String.valueOf(count), String.valueOf(cost) });
+```
 
 as an example:
 ```
