@@ -40,7 +40,7 @@ as an example:
 ```
 0:2 at the end mean:
 * number of distinct states discovered after taking this action
-* number of times this action was chosen.
+* total cost of this action.
 
 if it only has a value, like this:
 
