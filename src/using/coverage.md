@@ -38,7 +38,9 @@ as an example:
 ```
 <Next line 13, col 1 to line 13, col 4 of module Github845 (15 8 17 24)>: 0:2
 ```
-0:2 at the end mean distinct calls and total calls.
+0:2 at the end mean:
+* number of distinct states discovered after taking this action
+* number of times this action was chosen.
 
 if it only has a value, like this:
 
