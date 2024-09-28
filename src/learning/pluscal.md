@@ -3,6 +3,7 @@ PlusCal is an algorithm language—a language for writing and debugging algorith
 
 The easiest way to learn pluscal, is to read the Pluscal tutorial by Lamport. Free, and readable online; it can be found here: https://lamport.azurewebsites.net/tla/tutorial/contents.html
 
+## C-style vs P-Style
 
 Pluscal comes into two flavors: C-Style and P-Style. For a more complete overview of Pluscal, there is a manual available for each style: [c-manual.pdf](https://lamport.azurewebsites.net/tla/c-manual.pdf), [p-style.pdf](https://lamport.azurewebsites.net/tla/p-manual.pdf).
 
