@@ -4,6 +4,7 @@
     - [Contributing](./contributing.md)
 ----
 - [Learning TLA+](./learning/intro.md)
+    - [Exercises](./learning/exercises.md)
     - [Lamport's video tutorial]()
     - [Hyperbook]()
     - [Example repo]()
